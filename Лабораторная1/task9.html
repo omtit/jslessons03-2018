@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Task 9 </title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<table border = "1">
+			<tr>
+				<td colspan = "5" align="center"><b>Вводимые данные</b></td>
+				<td rowspan = "2" align="center" width = "300px">Результат</td>
+			</tr>
+			<tr>
+				<td align="center">user</td>
+				<td align="center">pass</td>
+				<td align="center">host</td>
+				<td align="center">port</td>
+				<td align="center">db</td>
+				
+			</tr>
+			<tr>
+				<td align="center"><input id = "string_1" oninput = "work()"></td>
+				<td align="center"><input id = "string_2" oninput = "work()"></td>
+				<td align="center"><input id = "string_3" oninput = "work()"></td>
+				<td align="center"><input id = "string_4" oninput = "work()"></td>
+				<td align="center"><input id = "string_5" oninput = "work()"></td>
+				<td align="center"><div output id = "out"></div></td>
+			</tr>
+			
+		</table>
+		<script> 
+			function work() {
+			var div_out = document.getElementById("out");
+			var in_a = document.getElementById("string_1");
+			var in_b = document.getElementById("string_2");
+			var in_c = document.getElementById("string_3");
+			var in_d = document.getElementById("string_4");
+			var in_e = document.getElementById("string_5");
+			var a = in_a.value;
+			var b = in_b.value;
+			var c = in_c.value;
+			var d = in_d.value;
+			var e = in_e.value;
+			div_out.innerHTML = "User ID &nbsp = &nbsp " + a + ";" + "&nbsp" + "Password &nbsp=&nbsp" + b + ";" + "&nbsp" + "Host &nbsp = &nbsp" +
+			c + ";" + "&nbsp" + "Port &nbsp = &nbsp" + d + ";" + "&nbsp" + "Database &nbsp = &nbsp" + e + ";" 
+			}
+		</script>
+	</body>
+</html>

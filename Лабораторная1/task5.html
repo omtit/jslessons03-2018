@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Task5</title>
+		<meta charset = "UTF-8" />
+	</head>
+	<body>
+		<label>Стока A</label><br>
+		<input id = "string_1" oninput = "work()" align = "left"><br>
+		<label>Стока Б</label><br>
+		<input id = "string_2" oninput = "work()" align = "left">
+		<script>
+		function work () {
+			var div_out = document.getElementById("out");
+			var a = document.getElementById("string_1");
+			var b = document.getElementById("string_2");
+			var string_a = a.value;
+			var string_b = b.value;
+			div_out.innerHTML = string_b + " " + string_a ;
+			}
+		</script>
+		<hr color = "red" width = "144" align = "left"> 
+		<p>Результат: <output id = "out"> </output></p> 
+	</body>
+</html>

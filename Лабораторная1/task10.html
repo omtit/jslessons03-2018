@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Task 10</title>
+		<meta charset= "UTF-8">
+	</head>
+	<body>
+		<table border = "1">
+			<tr>
+				<td colspan = "3" align = "center">Вводимые данные</td>
+				<td rowspan = "2" align = "center" width = "500px">Результат</td>
+			</tr>
+			<tr>
+				<td align = "center">a</td>
+				<td align = "center">a</td>
+				<td align = "center">a</td>
+			</tr>
+			<tr>
+				<td><input id = "string_1" oninput = "work ()"></td>
+				<td><input id = "string_2" oninput = "work ()"></td>
+				<td><input id = "string_3" oninput = "work ()"></td>
+				<td align = "center"><div id = "out"></div></td> 
+			</tr>
+		</table>
+		<script>
+			function work () {
+			var div_out = document.getElementById("out");
+			var in_a = document.getElementById("string_1");
+			var in_b = document.getElementById("string_2");
+			var in_c = document.getElementById("string_3");
+			var a = in_a.value;
+			var b = in_b.value;
+			var c = in_c.value;
+			div_out.innerHTML = "Квадратное уравнение" +"&nbsp" + a + "*" + "x" + "*" + "x" + "&nbsp" + "+" + "&nbsp" + b + "*" + "x" +
+             "&nbsp" + "+" + "&nbsp" + c + "&nbsp" + "=" + "&nbsp" + "0" + "." + "&nbsp" + "<br>" + "Его дискриминант вычисляется по формуле: d =" +
+			 "&nbsp" + b + "*" + b + "&nbsp" + "-" + "&nbsp" + "4" + "*" + a + "*" + c + "."
+			}
+		</script>
+	</body>
+</html>
