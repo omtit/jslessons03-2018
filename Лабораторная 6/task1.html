@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Task8</title>
+		<meta charset = "UTF-8" />
+	</head>
+	<body>
+	<div id = "out"></div>
+	<script>
+	function work(){
+	var div_out = document.getElementById("out");
+	var result = "";
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	
+	result  = result + "!";
+	result  = result + "!";
+	result  = result + "!";
+	result = result + "<br>"
+	var i = 0;//сколько уже
+	var n = 13;//сколько нужно
+	while (i<n){
+		result = result + "!"
+		i = i+1;
+	}
+	div_out.innerHTML = result;
+	}
+	work ()
+	</script>
+	</body>
+</html>

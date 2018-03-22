@@ -25,11 +25,15 @@
 			var string_b = b.value;
 			var string_c = c.value;
 			var string_d = d.value;
-			div_out.innerHTML = "&lt" + "circle cx &nbsp =&nbsp " + "&quot" + string_a + "&quot" + "&nbsp" + "cy&nbsp=&nbsp" + "&quot" + 
-			string_b + "&quot" + "&nbsp" + "r&nbsp=&nbsp" + "&quot" + string_c + "&quot" + "&nbsp" + "fill&nbsp=&nbsp" + "&quot" +  string_d + "&quot" 
+			div_out.innerHTML = "<circle cx =" + "&quot" + string_a + "&quot" + "&nbsp" + "cy&nbsp=&nbsp" + "&quot" + 
+			string_b + "&quot" + "&nbsp" + "r&nbsp=&nbsp" + "&quot" + string_c + "&quot" + "&nbsp" + "fill&nbsp=&nbsp" + "&quot" +  string_d + "&quot" +
+			"/" + ">" 
 			}
 		</script>
+		<svg width = "400" height = "400" id =  "out">
+		
+		</svg>
 		<hr color = "red" width = "300" align = "left"> 
-		<output id = "out"> </output> 
+		
 	</body>
 </html>
