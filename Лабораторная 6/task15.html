@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<div id = "out"></div>
+	<script>
+	function work () {
+	var div_out = document.getElementById("out");
+	var a = 0;
+	var b = "";
+	var c = "";
+	for (var i = 20; i<=40; i++) {
+	a = a + i*i*i;
+	c = c + (b+i*i*i) + "=" + a + "+";
+	}
+	div_out.innerHTML = "0+" + c + "<br>" + "Ответ:" + a;
+	}
+	work ();
+	</script>
+	</body>
+</html>

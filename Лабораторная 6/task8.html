@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<div id = "out"></div>
+	<script>
+	function work () {
+	var div_out = document.getElementById("out");
+	var a = "";
+	var b = "";
+	var c = "";
+	for (var i = 1; i<=20; i++){
+    c = c + ((a+i) + "&nbsp;&nbsp;&nbsp;&nbsp;" + (b+i*453)) + "<br>";
+	}
+	div_out.innerHTML = c;
+	}
+	work ();
+	</script>
+	</body>
+</html>
